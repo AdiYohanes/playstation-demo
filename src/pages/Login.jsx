@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router";
-import backgroundImage from "../assets/images/background-login.png";
+import { Link } from "react-router-dom";
+import backgroundImage from "/images/background-login.png";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -23,24 +23,24 @@ const Login = () => {
   };
 
   return (
-    <div className="h-screen flex">
+    <div className="h-screen flex flex-col md:flex-row">
       {/* Left side - Login Form */}
-      <div className="w-full md:w-1/2 flex items-center justify-center p-4">
-        <div className="w-full max-w-lg border border-[#1B1010] p-8">
+      <div className="w-full md:w-1/2 flex items-center justify-center p-6 md:p-8">
+        <div className="w-full max-w-lg border border-[#1B1010] p-8 rounded-lg shadow-lg">
           {/* Logo */}
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center mb-4">
             <div className="w-10"></div>
             <div className="w-10"></div>
             <div className="w-10"></div>
           </div>
 
           {/* Login Header */}
-          <h2 className="mt-6 text-center text-4xl sm:text-5xl font-extrabold text-[#b99733] font-minecraft">
+          <h2 className="text-center text-4xl sm:text-5xl font-extrabold text-[#b99733] font-minecraft mb-6">
             Login
           </h2>
 
-          <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-            <div className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
+            <div className="space-y-4">
               <div>
                 <label
                   htmlFor="username"
@@ -86,7 +86,7 @@ const Login = () => {
               Log in
             </button>
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mt-4">
               <div className="flex items-center">
                 <input
                   id="remember-me"

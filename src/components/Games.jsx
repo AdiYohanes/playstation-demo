@@ -62,7 +62,7 @@ const Games = () => {
       <div className="flex justify-center mt-12">
         <button className="px-6 py-3 border-2 border-black text-xl font-funnel text-black hover:bg-gray-200 transition-all duration-300 flex items-center justify-center gap-3">
           <FaDice size={24} />
-          <span>View More Games</span>
+          <a href="/games">View More Games</a>
         </button>
       </div>
 

@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router";
 import NewPassword from "./pages/NewPassword";
 import ForgotPassword from "./pages/ForgotPassword";
 import GamesPage from "./pages/GamesPage";
+import BookingPage from "./pages/BookingPage";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Route path="/new-password" element={<NewPassword />} />
       <Route path="/forgot" element={<ForgotPassword />} />
       <Route path="/games" element={<GamesPage />} />
+      <Route path="/booking" element={<BookingPage />} />
       <Route path="*" element={<h1>404 - Not Found</h1>} />
     </Routes>
   );

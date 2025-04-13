@@ -4,7 +4,7 @@ import logo from "/images/logo.png";
 import buttonIcon from "/images/button-icon.png";
 
 const NAV_ITEMS = [
-  { href: "/mge-rental", label: "MGE Rental" },
+  { href: "/", label: "MGE Rental" },
   { href: "/rent", label: "Rent" },
   { href: "/food-drinks", label: "Food & Drinks" },
   { href: "/faq", label: "FAQ" },
